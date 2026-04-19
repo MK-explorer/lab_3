@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "title": "Тигролови",
+    "author": "Іван Багряний",
+    "price": 249,
+    "rating": 5.0,
+    "ratingCount": 128,
+    "genre": "Роман",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Тигролови"
+  },
+  {
+    "id": 2,
+    "title": "1984",
+    "author": "Джордж Орвелл",
+    "price": 199,
+    "rating": 4.9,
+    "ratingCount": 342,
+    "genre": "Антиутопія",
+    "image": "https://covers.openlibrary.org/b/isbn/9780451524935-M.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Маленький принц",
+    "author": "Антуан де Сент-Екзюпері",
+    "price": 179,
+    "rating": 4.8,
+    "ratingCount": 215,
+    "genre": "Казка",
+    "image": "https://covers.openlibrary.org/b/isbn/9780156012195-M.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Кобзар",
+    "author": "Тарас Шевченко",
+    "price": 220,
+    "rating": 5.0,
+    "ratingCount": 189,
+    "genre": "Поезія",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Кобзар"
+  },
+  {
+    "id": 5,
+    "title": "Гаррі Поттер і філософський камінь",
+    "author": "Дж. К. Роулінг",
+    "price": 299,
+    "rating": 4.9,
+    "ratingCount": 512,
+    "genre": "Фентезі",
+    "image": "https://covers.openlibrary.org/b/isbn/9780439708180-M.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Тіні забутих предків",
+    "author": "Михайло Коцюбинський",
+    "price": 159,
+    "rating": 4.7,
+    "ratingCount": 97,
+    "genre": "Класика",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Тіні+забутих+предків"
+  },
+  {
+    "id": 7,
+    "title": "Захар Беркут",
+    "author": "Іван Франко",
+    "price": 145,
+    "rating": 4.6,
+    "ratingCount": 143,
+    "genre": "Класика",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Захар+Беркут"
+  },
+  {
+    "id": 8,
+    "title": "Дюна",
+    "author": "Френк Герберт",
+    "price": 389,
+    "rating": 4.8,
+    "ratingCount": 301,
+    "genre": "Фантастика",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Дюна"
+  },
+  {
+    "id": 9,
+    "title": "Місто",
+    "author": "Валер'ян Підмогильний",
+    "price": 189,
+    "rating": 4.7,
+    "ratingCount": 88,
+    "genre": "Класика",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Місто"
+  },
+  {
+    "id": 10,
+    "title": "Сто років самотності",
+    "author": "Ґабріель Ґарсія Маркес",
+    "price": 279,
+    "rating": 4.9,
+    "ratingCount": 421,
+    "genre": "Магічний реалізм",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Сто+років+самотності"
+  },
+  {
+    "id": 11,
+    "title": "Чорна рада",
+    "author": "Пантелеймон Куліш",
+    "price": 135,
+    "rating": 4.5,
+    "ratingCount": 67,
+    "genre": "Класика",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Чорна+рада"
+  },
+  {
+    "id": 12,
+    "title": "Великий Гетсбі",
+    "author": "Френсіс Скотт Фіцджеральд",
+    "price": 210,
+    "rating": 4.7,
+    "ratingCount": 294,
+    "genre": "Класика",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Великий+Гетсбі"
+  },
+  {
+    "id": 13,
+    "title": "Над прірвою у житі",
+    "author": "Джером Селінджер",
+    "price": 195,
+    "rating": 4.6,
+    "ratingCount": 178,
+    "genre": "Роман",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Над+прірвою+у+житі"
+  },
+  {
+    "id": 14,
+    "title": "Лісова пісня",
+    "author": "Леся Українка",
+    "price": 165,
+    "rating": 4.8,
+    "ratingCount": 203,
+    "genre": "Драма",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Лісова+пісня"
+  },
+  {
+    "id": 15,
+    "title": "Хоббіт",
+    "author": "Дж. Р. Р. Толкін",
+    "price": 259,
+    "rating": 4.8,
+    "ratingCount": 445,
+    "genre": "Фентезі",
+    "image": "https://placehold.co/300x400/2c1a0e/f5e6c8?font=georgia&text=Хоббіт"
+  }
+]

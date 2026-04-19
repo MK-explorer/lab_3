@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Демо Користувач",
+    "email": "demo@knygaland.ua",
+    "username": "demo",
+    "password": "demo123",
+    "memberSince": "Січень 2024"
+  },
+  {
+    "id": 2,
+    "name": "Адмін",
+    "email": "admin@knygaland.ua",
+    "username": "admin",
+    "password": "admin123",
+    "memberSince": "Грудень 2022"
+  }
+]
