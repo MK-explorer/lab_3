@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AppProvider } from './context/AppContext';
 import Header     from './components/Header';
 import Toast      from './components/Toast';
@@ -20,10 +20,9 @@ function NotFound() {
 export default function App() {
   return (
     <AppProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Header />
 
-        {/* Маршрутизація між сторінками без перезавантаження браузера */}
         <Routes>
           <Route path="/"        element={<HomePage />} />
           <Route path="/catalog" element={<CatalogPage />} />
@@ -33,11 +32,11 @@ export default function App() {
         </Routes>
 
         <footer className="footer">
-          <p>© {new Date().getFullYear()} КнигаЛенд — Зроблено з ❤️ на React.</p>
+          <p>© {new Date().getFullYear()} КнигаЛенд </p>
         </footer>
 
         <Toast />
-      </BrowserRouter>
+      </HashRouter>
     </AppProvider>
   );
 }
