@@ -4,8 +4,12 @@ const AppContext = createContext(null);
 
 export function AppProvider({ children }) {
   const [cart, setCart] = useState([]);
-  const [currentUser, setCurrentUser] = useState(null);
   const [toast, setToast] = useState(null);
+
+  const [currentUser, setCurrentUser] = useState(() => {
+    const saved = localStorage.getItem('currentUser');
+    return saved ? JSON.parse(saved) : null;
+  });
 
   const showToast = useCallback((msg) => {
     setToast(msg);
@@ -38,8 +42,16 @@ export function AppProvider({ children }) {
   }, []);
 
   const clearCart = useCallback(() => setCart([]), []);
-  const login  = useCallback((user) => setCurrentUser(user), []);
-  const logout = useCallback(() => setCurrentUser(null), []);
+
+  const login = useCallback((user) => {
+    setCurrentUser(user);
+    localStorage.setItem('currentUser', JSON.stringify(user));
+  }, []);
+
+  const logout = useCallback(() => {
+    setCurrentUser(null);
+    localStorage.removeItem('currentUser');
+  }, []);
 
   const cartCount = cart.reduce((sum, i) => sum + i.qty, 0);
   const isInCart  = useCallback((id) => cart.some(i => i.id === id), [cart]);

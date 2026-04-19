@@ -7,12 +7,10 @@ export default function HomePage() {
   const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // useEffect: завантаження books.json при монтуванні
   useEffect(() => {
-    fetch('/data/books.json')
+    fetch(`${import.meta.env.BASE_URL}data/books.json`)
       .then(res => res.json())
       .then(data => {
-        // Fisher-Yates shuffle для рандомних рекомендацій
         const shuffled = [...data];
         for (let i = shuffled.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));

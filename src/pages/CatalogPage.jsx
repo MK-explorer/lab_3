@@ -7,21 +7,18 @@ export default function CatalogPage() {
   const [activeGenre, setActiveGenre] = useState('all');
   const [authorSearch, setAuthorSearch] = useState('');
 
-  // useEffect: завантаження books.json при монтуванні
   useEffect(() => {
-    fetch('/data/books.json')
+    fetch(`${import.meta.env.BASE_URL}data/books.json`)
       .then(res => res.json())
       .then(data => { setBooks(data); setLoading(false); })
       .catch(() => setLoading(false));
   }, []);
 
-  // useMemo: унікальні жанри з даних
   const genres = useMemo(() => {
     const set = new Set(books.map(b => b.genre));
     return ['all', ...Array.from(set)];
   }, [books]);
 
-  // useMemo: фільтрація за жанром + автором одночасно
   const filtered = useMemo(() => books.filter(book => {
     const genreOk  = activeGenre === 'all' || book.genre === activeGenre;
     const authorOk = !authorSearch.trim() ||
@@ -33,7 +30,6 @@ export default function CatalogPage() {
     <div className="container page">
       <h2 className="section-heading">Каталог <em>книг</em></h2>
 
-      {/* Фільтр за жанром (Завдання 2) */}
       <div className="filter-bar">
         <span className="filter-label">Жанр:</span>
         {genres.map(genre => (
@@ -47,7 +43,6 @@ export default function CatalogPage() {
         ))}
       </div>
 
-      {/* Фільтр за автором (Завдання 2) */}
       <div className="filter-bar" style={{ marginBottom: '32px' }}>
         <span className="filter-label">Автор:</span>
         <input
